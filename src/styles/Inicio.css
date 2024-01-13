@@ -1,0 +1,20 @@
+.container-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mti-inicio {
+    margin-top: 50px;
+}
+
+.logo-inicio {
+    height: auto;
+    max-width: 400px;
+}
+
+.welcome-inicio {
+    font-size: large;
+}
+

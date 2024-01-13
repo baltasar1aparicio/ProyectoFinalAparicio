@@ -1,0 +1,88 @@
+.container-seguimiento {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-title-seguimiento {
+    color: #1565C0;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.second_container-seguimiento {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-seguimiento {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.boton-seguimiento {
+    background-color: #1565C0;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton-seguimiento:hover {
+    background-color: #0B3D6E;
+}
+
+.detail-seguimiento {
+    color: #1565C0;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.client-seguimiento .email-seguimiento {
+    margin-bottom: 10px;
+}
+
+.orden-seguimiento {
+    list-style: none;
+    padding: 0;
+}
+
+.id-seguimiento {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.img-seguimiento {
+    max-width: 100px;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.titulo-seguimiento {
+    margin-right: 30px;
+}
+
+.titulo-seguimiento .cant-seguimiento {
+    margin: 0;
+    font-size: 16px;
+}
+
+.encabezado-seguimiento {
+    font-size: 24px;
+    margin-bottom: 15px;
+}

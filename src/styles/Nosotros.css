@@ -1,0 +1,14 @@
+.container-nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.satoru-nosotros {
+    height: auto;
+    max-width: 700px;
+    margin-top: 50px;
+}

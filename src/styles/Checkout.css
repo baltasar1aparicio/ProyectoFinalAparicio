@@ -1,0 +1,47 @@
+.container-checkout {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.main-title-checkout {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.formulario-checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  margin-bottom: 15px;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.enviar-checkout {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding-left: 45px;
+  padding-right: 45px;
+}

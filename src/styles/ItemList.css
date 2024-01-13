@@ -1,0 +1,17 @@
+.container-itemlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main-title-itemlist {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.productos-itemlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
