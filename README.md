@@ -1,8 +1,3 @@
-# React + Vite
+GeekStore
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El proyecto GeekStore se basa en un e-commerce sobre figuras de acción de 4 animes: Naruto, Jujutsu Kaisen, Shingeki no Kyojin y Kimetsu no Yaiba. No se utilizaron dependencias por fuera de las trabajadas en el curso. Se crea un componente extra que permite mostrar el logo del anime dependiendo en que "pagina" del navbar se encuentre, gracias al hook useEffect y la funcion switch. Se permite realizar una compra que brinda un ID unico de cada compra (y crea un documento en la collection "pedidos" en Firebase) y su correspondiente rastreo de la misma en la pagina "Seguimiento", utilizando el ID brindado al finalizar la compra, el cual es generado por Firebase. Aparte, la pagina de contacto crea un documento en la collection "contacto" de Firebase que permite guardar y visualizar los comentarios o consultas enviadas por los usuarios. Cada componente posee su propio archivo .css para controlarlos individualmente de forma mas odernada y reutilizable. En total se utilizan 3 collections en Firebase, "productos", "contacto" y "pedidos".
