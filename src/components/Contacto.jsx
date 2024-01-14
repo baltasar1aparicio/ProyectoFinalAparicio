@@ -10,13 +10,11 @@ const Contacto = () => {
 
   const enviar = async (data) => {
     try {
-      // Guarda los datos en la colección "contactos" (ajústalo según tu estructura de datos)
       const contactosRef = collection(dataBase, "contactos");
       await addDoc(contactosRef, data);
 
       console.log("Datos enviados:", data);
 
-      // Actualiza el estado para mostrar el mensaje de éxito y ocultar el formulario
       setEnviado(true);
     } catch (error) {
       console.error("Error al enviar datos:", error);
