@@ -12,12 +12,22 @@ const ItemDetail = ({ item }) => {
 
   const [cantidad, setCantidad] = useState(1);
 
+  const [mostrarTooltip, setMostrarTooltip] = useState(false);
+
   const handleRestar = () => {
     cantidad > 1 && setCantidad(cantidad - 1)
   }
 
   const handleSumar = () => {
     cantidad < item.stock && setCantidad(cantidad + 1)
+  }
+
+  const handleAgregarAlCarrito = () => {
+    agregarAlCarrito(item, cantidad);
+    setMostrarTooltip(true);
+    setTimeout(() => {
+      setMostrarTooltip(false);
+    }, 2000);
   }
 
   return (
@@ -33,8 +43,9 @@ const ItemDetail = ({ item }) => {
             cantidad={cantidad}
             handleSumar={handleSumar}
             handleRestar={handleRestar}
-            handleAgregar={() => { agregarAlCarrito(item, cantidad) }}
+            handleAgregar={() => { handleAgregarAlCarrito(item, cantidad) }}
           />
+          <p className={`tooltip-itemdetail ${mostrarTooltip ? 'visible-tooltip' : ''}`}>Producto agregado</p>
         </div>
       </div>
     </div>

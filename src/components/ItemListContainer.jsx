@@ -5,6 +5,7 @@ import { collection, getDocs, query, where } from "firebase/firestore";
 import { dataBase } from "../firebase/dataBase";
 import CategoriaImage from "./ImagenAnime";
 
+
 const ItemListContainer = () => {
 
     const [productos, setProductos] = useState([]);
@@ -32,10 +33,11 @@ const ItemListContainer = () => {
 
 
     return (
-        <div>
-            <CategoriaImage categoria={categoria} />
-            <ItemList productos={productos} titulo={titulo} />
-        </div>
+            <div>
+                <CategoriaImage categoria={categoria} />
+                <ItemList productos={productos} titulo={titulo} />
+            </div>
+
     )
 }
 

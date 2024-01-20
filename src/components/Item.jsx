@@ -4,7 +4,7 @@ import '../styles/Item.css'
 
 const Item = ({ producto }) => {
   return (
-    <div className="producto">
+      <div className="producto">
       <img src={producto.imagen} alt={producto.titulo} />
       <div className='centrar-item'>
         <h4>{producto.titulo}</h4>
@@ -13,6 +13,7 @@ const Item = ({ producto }) => {
         <Link className="ver-mas" to={`/item/${producto.id}`}>Ver más</Link>
       </div>
     </div>
+    
   )
 }
 

@@ -38,3 +38,21 @@
 .agregar-al-carrito:hover {
     background-color: #8b51f7;
 }
+
+.tooltip-itemcount {
+    background-color: #4CAF50;
+    /* Verde */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+.tooltip-itemcount.tooltip-visible {
+    opacity: 1;
+}
+

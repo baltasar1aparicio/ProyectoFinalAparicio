@@ -53,3 +53,19 @@
     color: #27ae60;
     margin-bottom: 20px;
 }
+
+.tooltip-itemdetail {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .tooltip-itemdetail.visible-tooltip {
+    opacity: 1;
+  }
