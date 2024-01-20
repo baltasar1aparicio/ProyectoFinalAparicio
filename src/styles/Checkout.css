@@ -1,5 +1,4 @@
 .container-checkout {
-  max-width: 400px;
   margin: auto;
   margin-top: 40px;
 }
@@ -44,4 +43,13 @@ input:focus {
   transition: background-color 0.3s;
   padding-left: 45px;
   padding-right: 45px;
+}
+
+.checkout-pedido-id {
+  display: flex;
+  justify-content: center;
+}
+
+.seguimiento-checkout-word {
+  color: #4caf50;
 }

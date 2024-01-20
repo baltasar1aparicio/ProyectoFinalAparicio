@@ -35,7 +35,7 @@ const ItemDetail = ({ item }) => {
         <div className="producto-detalle">
           <h3 className="titulo">{item.titulo}</h3>
           <p className="descripcion">{item.descripcion}</p>
-          <p className="categoria">Anime: {toCapital(item.categoria)}</p>
+          <p className="categoria">Anime: {toCapital(item.anime)}</p>
           <p className="precio">${item.precio}</p>
           <ItemCount
             cantidad={cantidad}
@@ -45,9 +45,9 @@ const ItemDetail = ({ item }) => {
           />
           <ToastContainer
             position="top-center"
-            autoClose={4000}
+            autoClose={2000}
             hideProgressBar
-            newestOnTop={false}
+            newestOnTop={true}
             closeOnClick
             rtl={false}
             pauseOnFocusLoss

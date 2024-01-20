@@ -6,7 +6,7 @@ import '../styles/Carrito.css'
 
 const Carrito = () => {
 
-    const { carrito, precioTotal, vaciarCarrito } = useContext(CartContext);
+    const { carrito, precioTotal, vaciarCarrito, handleEliminar } = useContext(CartContext);
 
     const handleVaciar = () => {
         vaciarCarrito();
@@ -25,6 +25,9 @@ const Carrito = () => {
                         <p>Precio unit: ${prod.precio}</p>
                         <p>Precio total: ${prod.precio * prod.cantidad}</p>
                         <p>Cant: {prod.cantidad}</p>
+                        <button className='boton-carrito' onClick={() => handleEliminar(prod.id)}>
+                        Eliminar
+                    </button>
                         <br />
                     </div>
                 ))

@@ -9,7 +9,7 @@ const Item = ({ producto }) => {
       <div className='centrar-item'>
         <h4>{producto.titulo}</h4>
         <p>Precio: ${producto.precio}</p>
-        <p>Anime: {(producto.anime)}</p>
+        <p>Anime: {producto.anime}</p>
         <Link className="ver-mas" to={`/item/${producto.id}`}>Ver más</Link>
       </div>
     </div>

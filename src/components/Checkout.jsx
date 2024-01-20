@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { collection, addDoc } from 'firebase/firestore';
 import { dataBase } from '../firebase/dataBase';
 import '../styles/Checkout.css';
+import { Link } from 'react-router-dom';
 
 const Checkout = () => {
     const [pedidoId, setPedidoId] = useState('');
@@ -39,7 +40,8 @@ const Checkout = () => {
         return (
             <div className="container-checkout">
                 <h1 className="main-title-checkout">Muchas gracias por tu compra</h1>
-                <p>Tu número de pedido es: {pedidoId}</p>
+                <p className='checkout-pedido-id'>Tu número de pedido es: {pedidoId}</p>
+                <p className='checkout-pedido-id'>Puede realizar el seguimiento en la pestaña&nbsp; <Link to="/seguimiento" className='seguimiento-checkout-word'>Seguimiento</Link></p>
             </div>
         );
     }

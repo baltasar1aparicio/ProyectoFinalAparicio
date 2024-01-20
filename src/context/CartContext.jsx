@@ -39,6 +39,13 @@ export const CartProvider = ({ children }) => {
         localStorage.setItem("carrito", JSON.stringify(carrito));
     }, [carrito])
 
+    const handleEliminar = (productId) => {
+        setCarrito((prevCarrito) =>
+            prevCarrito.filter((producto) => producto.id !== productId)
+        );
+    };
+
+
 
     return (
         <CartContext.Provider value={{
@@ -46,7 +53,8 @@ export const CartProvider = ({ children }) => {
             agregarAlCarrito,
             cantidadEnCarrito,
             precioTotal,
-            vaciarCarrito
+            vaciarCarrito,
+            handleEliminar
         }}>
             {children}
         </CartContext.Provider>
